@@ -1,6 +1,3 @@
-Here's the **README.md** file in the correct format for you to copy and paste:
-
-```md
 # LLM Content Classification
 
 This repository contains scripts and data for a project that classifies text based on:
@@ -13,7 +10,6 @@ The project demonstrates how to:
 - Train and evaluate separate models for each content type to classify the origin of the text.
 - Save the trained models and tokenizer for later usage.
 
----
 
 ## Table of Contents
 - [Project Overview](#project-overview)
@@ -27,7 +23,6 @@ The project demonstrates how to:
 - [Directory Structure](#directory-structure)
 - [License](#license)
 
----
 
 ## Project Overview
 
@@ -44,7 +39,6 @@ We work with four categories of content:
 
 Each category is handled by a separate ALBERT model fine-tuned on relevant data. This allows more targeted classification and better performance for each content type.
 
----
 
 ## Data Organization
 
@@ -70,11 +64,10 @@ data/
     ├── human_poetry.csv
     ├── human_code.csv
     └── human_stories.csv
-```
+
 
 **Note:** Each CSV file may have slightly different structures (e.g., `prompts` + `responses`, or `Title` + `Chapter_text`). The loading functions handle these varied structures.
 
----
 
 ## Requirements
 
@@ -90,11 +83,8 @@ data/
 
 Install dependencies using:
 
-```bash
 pip install torch transformers scikit-learn pandas numpy matplotlib nltk tqdm
-```
 
----
 
 ## Usage
 
@@ -115,7 +105,6 @@ pip install torch transformers scikit-learn pandas numpy matplotlib nltk tqdm
    - Train separate ALBERT models for each content type
    - Evaluate the models
 
----
 
 ## Training the Models
 
@@ -145,7 +134,7 @@ The training process consists of:
    - Uses `AdamW` optimizer.
    - Tracks loss using `tqdm`.
 
----
+
 
 ## Evaluation
 
@@ -166,7 +155,6 @@ Classification Report for Essay:
     accuracy                           0.84      1500
 ```
 
----
 
 ## Saving the Models
 
